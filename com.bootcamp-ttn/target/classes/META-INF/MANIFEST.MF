@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1583346510784
+Build-Jdk: 1.8.0_242
+Built-By: arpit
+Bundle-ManifestVersion: 2
+Bundle-Name: Student
+Bundle-SymbolicName: com.bootcamp.Student
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: Services;uses:=classes;version="1.0.0",classes;version="
+ 1.0.0"
+Import-Package: Services,classes
+Provide-Capability: osgi.service;objectClass:List<String>="Services.Conf
+ igurationService",osgi.service;objectClass:List<String>="Services.Stude
+ ntServices"
+Require-Capability: osgi.service;filter:="(objectClass=Services.Configur
+ ationService)";effective:=active,osgi.service;filter:="(objectClass=Ser
+ vices.StudentServices)";effective:=active,osgi.extender;filter:="(&(osg
+ i.extender=osgi.component)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee
+ ;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/Services.ClassConfigurationService.xml,OSGI-
+ INF/Services.StudentClassService.xml,OSGI-INF/classes.MainStudent.xml
+Tool: Bnd-4.1.0.201810181252
