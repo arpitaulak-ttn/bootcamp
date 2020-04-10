@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="servlet.SlingSortingServlet">
-  <implementation class="servlet.SlingSortingServlet"/>
-  <service>
-    <provide interface="javax.servlet.Servlet"/>
-  </service>
-  <property name="sling.servlet.paths" type="String" value="/apps/servlet/servlet2"/>
-</scr:component>
